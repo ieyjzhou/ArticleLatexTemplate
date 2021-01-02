@@ -1,0 +1,168 @@
+%\documentclass[12pt]{article}
+\documentclass[11pt]{extarticle}
+
+\usepackage[a4paper, top=20mm, left =20mm, right =20mm ,bottom=20mm ]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+}
+\usepackage{authblk}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{tabularx}
+%\usepackage{longtable}
+\usepackage{lscape} 
+\usepackage{subfig}
+\usepackage{lineno}
+\linenumbers 
+\usepackage{graphicx}
+\usepackage{caption}
+
+
+
+\usepackage{epsfig}
+%\usepackage[square,numbers,round]{natbib}
+\usepackage[round]{natbib}
+%\bibliographystyle{IEEEtranSN}
+\bibliographystyle{plainnatnourl}
+%\bibliographystyle{abbrvnat}
+%\setcitestyle{authoryear}
+%\usepackage[backend=bibtex,citestyle=authortitle,url=true]{biblatex}
+%------------------------------------------------------
+\linespread{1.0}
+
+
+ \usepackage{booktabs}
+\usepackage{xcolor}
+\newcommand{\ytlformat}{\color{black}}
+\newcommand\ytl[3]{%
+	\color{gray}\bfseries  #1%
+	& \ytlformat #2
+	& \ytlformat #3
+	
+	\\[7pt]
+}
+%------------------------------------------------------
+% Keywords command
+%\providecommand{\keywords}[1]
+%{
+ % \small	
+ % \textbf{\textit{Keywords---}} #1
+%}
+
+%\rule{\textwidth}{0.3mm}
+%\begin{abstract}
+
+%.\\
+%   \keywords{Port owner; Concession contract; Container terminal operator; }
+   
+%\end{abstract}
+
+%\usepackage[lastpage,user]{zref}
+%\usepackage{fancyhdr} 
+%\pagestyle{fancy}
+%\pagestyle{plain}
+%\fancyhf{}
+%\fancyhead[L]{Yanjie Zhou and Kap Hwan Kim}
+%\fancyhead[R]{Update: \date{\today}}
+%\fancyhead[L]{中间页眉}
+%\fancyfoot[L]{Submit to Transportation Research Part E: Logistics and Transportation Review}
+%\fancyfoot[C]{Page \thepage}
+%\fancyfoot[R]{Page \thepage/\zpageref{LastPage}} %\usepackage[lastpage,user]{zref}
+%\renewcommand{\headrulewidth}{1pt}
+%\renewcommand{\footrulewidth}{1pt}
+
+
+
+\title{Title Title Title Title Title}
+%\footnotesize\date{\today}
+
+ 
+
+
+\author{author1$^\dagger$, author2$^\ddagger$\footnote{Corresponding author and email: \texttt{*****@*****}}, author3$^\S$}
+ 
+
+\affil{$^\dagger$School of Management Engineering, Zhengzhou University, Zhengzhou 450001, China}
+\affil{$^\ddagger$**** university, China}
+\affil{$^\S$**** university, China}
+\begin{document}
+\maketitle
+
+
+  
+\noindent\rule{\textwidth}{1pt}
+{\bf Abstract:}  test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test .
+\\
+{\bf Keywords:} keyword1; keyword2; keyword3.\\
+\noindent\rule{\textwidth}{1pt}
+
+%\tableofcontents
+ 
+%\rule{\textwidth}{0.3mm}
+
+\section{Introduction}
+%\cite{berns2017smart}
+\cite{ZHOU2018932} introduced *******.
+test test test test test test test test \citep{zhou2020optimal}
+
+
+ 
+
+\section{Figure} 
+ 
+ 
+\begin{figure}[ht!]		
+	\centering
+	\includegraphics[width=0.8\linewidth]{Figure}	
+	\caption{Figure test.}
+	\label{Fig_smart_Containerships}
+\end{figure}
+
+
+ 
+
+\begin{figure}[ht!]
+	\subfloat[Sub figure 1.]{
+		\begin{minipage}[c][1\width]{
+				0.5\textwidth}
+			\centering
+			\includegraphics[width=1\textwidth]{Figure}
+			\label{Fig_subfigure1}		
+		\end{minipage}
+	}
+	\hfill 	
+	\subfloat[Sub figure 2.]{
+		\begin{minipage}[c][1\width]{
+				0.5\textwidth}
+			\centering
+			\includegraphics[width=1.0\textwidth]{Figure}
+			\label{Fig_subfigure2}
+		\end{minipage}
+	}	
+	\caption{Two figures.}
+\end{figure}
+ 
+
+\section{Table} 
+
+\begin{table}[!h]
+	\centering
+		\caption{Table test.}
+	\begin{tabular}{lllll} \hline
+	row 1	& column  & column & column &  \\ \hline
+	row 2	&  &  &  &  \\
+	row 3	&  &  &  &  \\
+	row 4	&  &  &  & \\ \hline
+	\end{tabular}
+\end{table}
+
+\section{Conclusions} 
+\bibliography{references}
+
+\end{document}
